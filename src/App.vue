@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       // tagChooseList: ["偏高","正常","偏低"],
-      // audioUrl: "http://10.145.71.29:8081/file/media/12/woman/4-1585897922011787/11_48000_6811380836833764672.wav"
+      // audioUrl: "http://kolber.github.io/audiojs/demos/mp3/juicy.mp3"
     };
   },
   methods: {
