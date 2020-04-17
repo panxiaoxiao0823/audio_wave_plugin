@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.playSpan {
+  color: #39f;
+  font-size: 22px;
+}
+
+#canvasBlock {
+  width: 900px;
+  // padding: 0 0 0 140px;
+  position: relative;
+  box-sizing: initial;
+  height: 200px;
+}
+
+#canvasMark {
+  position: absolute;
+  left: 120px;
+  padding: 0 20px 10px 20px;
+  height: 160px;
+  width: 940px;
+  box-sizing: border-box;
+}
+
+#canvasCover {
+  position: absolute;
+  width: 900px;
+  height: 150px;
+  border: 1px solid #e5e6e8;
+  // padding: 10px 20px;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 150px;
+  background-color: rgb(7, 160, 247);
+  display: inline-block;
+  left: 0px;
+}
+
+.line.select {
+  position: absolute;
+  background-color: blue;
+}
+
+.rect {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  display: inline-block;
+  top: 40px;
+  left: -20px;
+  cursor: pointer;
+}
+
+#max-spectrum {
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+#mid-spectrum {
+  position: absolute;
+  top: 75px;
+  left: -10px;
+}
+
+#min-spectrum {
+  position: absolute;
+  top: 150px;
+  left: -10px;
+}
+
+.spectrumBlock {
+  width: 0;
+  height: 150px;
+  background-color: #a1cfea;
+  position: absolute;
+  opacity: 0.5;
+  text-align: center;
+}
+
+/*使用:nth-child(even)给表格的奇数行添加背景和阴影效果*/
+#tableZebra {
+  height: 300px;
+  overflow-y: auto;
+  margin-top: 100px;
+  margin-left: 80px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+.zebra {
+  width: 960px;
+}
+
+.zebra .alternate,
+.zebra tbody tr:nth-child(even) {
+  background: #f2f2f3;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+}
+
+.zebra th {
+    font-size: 14px;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  border-bottom: 1px solid #ccc;
+  background-color: #c5c5c7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f3), to(#c5c5c7));
+  ;
+  background-image: -webkit-linear-gradient(top, #f2f2f3, #c5c5c7);
+  background-image: -moz-linear-gradient(top, #f2f2f3, #c5c5c7);
+  background-image: -ms-linear-gradient(top, #f2f2f3, #c5c5c7);
+  background-image: -o-linear-gradient(top, #f2f2f3, #c5c5c7);
+  background-image: linear-gradient(top, #f2f2f3, #c5c5c7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f2f2f3, endColorstr=#c5c5c7);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#f2f2f3, endColorstr=#c5c5c7)";
+}
+
+/*使用 :first-child设置表格表头第一个单元格左上角为圆角*/
+.zebra th:first-child {
+  border-radius: 6px 0 0 0;
+}
+
+/*使用 :last-child设置表格表头最后一个单元格右上角为圆角*/
+.zebra th:last-child {
+  border-radius: 0 6px 0 0;
+}
+
+.zebra th,
+.zebra td {
+  padding: 7px 0;
+  text-align: center;
+}
